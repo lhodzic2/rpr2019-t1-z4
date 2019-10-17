@@ -81,7 +81,6 @@ public class Main {
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
                 String kod = scanner.nextLine();
-                kod = scanner.nextLine();
                 if(!kod.equals("c")){
                     Artikl a = korpa.izbaciArtiklSaKodom(kod);
                     if(a != null){
@@ -91,6 +90,7 @@ public class Main {
             }
             else if(opcija == 3){
                 int cijena = korpa.dajUkupnuCijenuArtikala(), iznos;
+
                 System.out.println("Ukupna cijena je " + korpa.dajUkupnuCijenuArtikala() + " KM.");
                 do{
                     System.out.print("Unesite ispravan iznos: ");
