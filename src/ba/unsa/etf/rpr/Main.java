@@ -80,6 +80,7 @@ public class Main {
                 System.out.println("Izbacivanje artikla iz korpe\nArtikli u korpi su: ");
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
+                scanner.nextLine();
                 String kod = scanner.nextLine();
                 if(!kod.equals("c")){
                     Artikl a = korpa.izbaciArtiklSaKodom(kod);
